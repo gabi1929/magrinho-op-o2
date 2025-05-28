@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Campo e Cidade: Pontes que Unem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conexão Campo e Cidade: Pontes que Unem</h1>
+        <p>Descubra a harmonia entre dois mundos, onde a natureza e a inovação se encontram.</p>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="intro-text-box">
+                <h2>O Coração da Terra, o Pulso da Metrópole</h2>
+                <p>Imagine um laço invisível, mas poderoso, que une o verde exuberante do campo ao cinza vibrante da cidade. Essa é a nossa conexão! Uma dança contínua de trocas, onde a vida rural alimenta a vida urbana e a cidade, por sua vez, impulsiona o desenvolvimento e a sustentabilidade no campo.</p>
+            </div>
+            <div class="intro-image-box">
+                <img src="https://via.placeholder.com/600x400?text=Campo+e+Cidade+Conectados" alt="Imagem que representa a conexão entre campo e cidade">
+            </div>
+        </section>
+
+        <section class="content-tabs">
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'Campo')">Vida no Campo</button>
+                <button class="tab-button" onclick="openTab(event, 'Cidade')">Vida na Cidade</button>
+                <button class="tab-button" onclick="openTab(event, 'Integracao')">Integração Sustentável</button>
+            </div>
+
+            <div id="Campo" class="tab-content active">
+                <h3>A Essência Rural: Onde Tudo Começa</h3>
+                <div class="text-box green-box">
+                    <p>O campo é o berço de nossa alimentação, o guardião de tradições e o pulmão do planeta. É ali que a paciência do plantio encontra a generosidade da colheita, e onde o ritmo da natureza dita a cadência da vida. Das pequenas propriedades familiares às grandes fazendas, o campo nos provê com a vitalidade que precisamos.</p>
+                    <img src="https://via.placeholder.com/400x250?text=Vida+no+Campo" alt="Imagem de vida no campo">
+                </div>
+                <div class="text-box lightblue-box">
+                    <p>Além da produção de alimentos, o campo oferece um refúgio de paz, paisagens de tirar o fôlego e um contato profundo com a biodiversidade. É um convite à desaceleração e à redescoberta do que é essencial.</p>
+                </div>
+            </div>
+
+            <div id="Cidade" class="tab-content">
+                <h3>O Dinamismo Urbano: Pulsar de Inovação</h3>
+                <div class="text-box purple-box">
+                    <p>A cidade, com sua efervescência e diversidade, é o centro da inovação, cultura e oportunidades. É o espaço onde ideias florescem, tecnologias avançam e diferentes culturas se entrelaçam, criando um mosaico de experiências humanas. Museus, teatros, centros de pesquisa – a cidade é um laboratório de progresso.</p>
+                    <img src="https://via.placeholder.com/400x250?text=Vida+na+Cidade" alt="Imagem de vida na cidade">
+                </div>
+                <div class="text-box orange-box">
+                    <p>Mas não é só isso: a cidade também é a grande consumidora dos produtos do campo, um elo crucial para a economia rural e um polo de disseminação de informações e demandas que chegam até as áreas rurais, impulsionando a modernização e a sustentabilidade no setor agrícola.</p>
+                </div>
+            </div>
+
+            <div id="Integracao" class="tab-content">
+                <h3>Integração Sustentável: O Futuro da Conexão</h3>
+                <div class="text-box yellow-box">
+                    <p>A verdadeira beleza da conexão campo e cidade reside na sua capacidade de se tornar sustentável. Projetos de agricultura urbana, feiras de produtores locais, tecnologias que otimizam o uso de recursos no campo e investimentos em infraestrutura que facilitam o escoamento da produção são exemplos dessa integração.</p>
+                    <img src="https://via.placeholder.com/400x250?text=Integracao+Sustentavel" alt="Imagem de integração sustentável">
+                </div>
+                <div class="text-box pink-box">
+                    <p>Essa relação simbiótica nos permite sonhar com um futuro onde o campo e a cidade não apenas coexistem, mas prosperam juntos, garantindo o bem-estar de todos e o respeito ao meio ambiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Compartilhe sua Visão!</h2>
+            <p>Como você percebe a conexão entre o campo e a cidade em seu dia a dia? Deixe seu comentário e enriqueça essa conversa!</p>
+            <button onclick="alert('Funcionalidade de comentário em desenvolvimento!')">Deixar um Comentário</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conexão Campo e Cidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
